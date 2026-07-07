@@ -24,7 +24,7 @@ st.caption("Ask questions about HR policies")
 
 GROQ_MODEL = "llama-3.3-70b-versatile"
 
-CORPUS_PATH = "zyro-dynamics-hr-corpus"
+CORPUS_PATH = "."
 
 @st.cache_resource
 def load_vectorstore():
