@@ -1,4 +1,4 @@
-# Zyro Dynamics HR Help Desk
+#AI-powered HR Help Desk built with RAG, LangChain, FAISS, Groq Llama 3.3, Streamlit, and LangSmith.
 
 An AI-powered HR chatbot built using Retrieval-Aug-Augmented Generation (RAG) that answers employee HR policy questions using company policy documents.
 
