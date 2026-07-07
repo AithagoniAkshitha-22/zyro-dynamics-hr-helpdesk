@@ -112,7 +112,7 @@ def ask_bot(question):
    if REFUSAL_MESSAGE in answer:
      return REFUSAL_MESSAGE, []
 
-return answer, docs
+   return answer, docs
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
