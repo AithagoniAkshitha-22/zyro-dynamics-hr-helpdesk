@@ -106,13 +106,13 @@ def ask_bot(question):
 
     answer = response.content
 
-   if "I don't know" in answer:
-    return REFUSAL_MESSAGE, []
-
-   if REFUSAL_MESSAGE in answer:
+    if "I don't know" in answer:
      return REFUSAL_MESSAGE, []
 
-   return answer, docs
+    if REFUSAL_MESSAGE in answer:
+     return REFUSAL_MESSAGE, []
+
+    return answer, docs
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
