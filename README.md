@@ -1,20 +1,28 @@
-#AI-powered HR Help Desk built with RAG, LangChain, FAISS, Groq Llama 3.3, Streamlit, and LangSmith.
+# Zyro Dynamics HR Help Desk
 
-An AI-powered HR chatbot built using Retrieval-Aug-Augmented Generation (RAG) that answers employee HR policy questions using company policy documents.
+An AI-powered HR Help Desk built using **Retrieval-Augmented Generation (RAG)** that answers employee HR policy questions by retrieving information from company HR policy documents. The chatbot provides grounded responses, cites source documents, and refuses unrelated queries.
 
 ## Live Demo
 
 https://zyro-dynamics-hr-appdesk-eajzdehbnu3ae2847zfbbc.streamlit.app/
 
+## Application Preview
+
+![Home Screen](assets/demo.png)
+
 ## Features
 
-- Answers HR policy questions using company documents
+- AI-powered HR chatbot
 - Retrieval-Augmented Generation (RAG)
-- Semantic search with FAISS
-- PDF document ingestion
-- Source document references for responses
+- Semantic search using FAISS
+- PDF document ingestion and indexing
+- Source document references for every response
 - Restricts responses to HR policy documents
-- Powered by Groq Llama 3.3 70B
+- Fast inference using Groq Llama 3.3 70B
+- LangSmith tracing for observability
+- Streamlit web interface
+
+---
 
 ## Tech Stack
 
@@ -23,11 +31,13 @@ https://zyro-dynamics-hr-appdesk-eajzdehbnu3ae2847zfbbc.streamlit.app/
 - LangChain
 - FAISS
 - HuggingFace Embeddings
-- Groq
+- Groq (Llama 3.3 70B)
 - LangSmith
 - PyPDF
 
-## Documents
+---
+
+## Documents Used
 
 - Company Profile
 - Employee Handbook
@@ -41,10 +51,14 @@ https://zyro-dynamics-hr-appdesk-eajzdehbnu3ae2847zfbbc.streamlit.app/
 - Onboarding & Separation Policy
 - Travel & Expense Policy
 
+---
+
 ## Project Structure
 
-```
+```text
 .
+├── assets/
+│   └── demo.png
 ├── app.py
 ├── requirements.txt
 ├── README.md
@@ -54,20 +68,24 @@ https://zyro-dynamics-hr-appdesk-eajzdehbnu3ae2847zfbbc.streamlit.app/
 └── 10_Travel_and_Expense_Policy.pdf
 ```
 
-## How to Run
+---
 
-Clone the repository:
+## Getting Started
+
+### Clone the repository
 
 ```bash
 git clone https://github.com/AithagoniAkshitha-22/zyro-dynamics-hr-helpdesk.git
 cd zyro-dynamics-hr-helpdesk
 ```
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
+
+### Configure Secrets
 
 Create a `.streamlit/secrets.toml` file:
 
@@ -75,12 +93,31 @@ Create a `.streamlit/secrets.toml` file:
 GROQ_API_KEY = "your_groq_api_key"
 ```
 
-Run the application:
+### Run the application
 
 ```bash
 streamlit run app.py
 ```
 
+---
+
+## Example Questions
+
+- What is the annual leave policy?
+- How does the performance review process work?
+- What is the work-from-home policy?
+- What are the employee onboarding steps?
+- What is the travel reimbursement policy?
+
+---
+
 ## Author
 
-Akshitha Aithagoni
+**Akshitha Aithagoni**
+
+- GitHub: https://github.com/AithagoniAkshitha-22
+- LinkedIn: https://www.linkedin.com/in/akshithaaithagoni223/
+
+---
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
